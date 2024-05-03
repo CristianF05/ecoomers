@@ -32,7 +32,10 @@
 
     <header>
         <nav class="navbar">
+                
             <div class="navbar-left">
+                                <!-- Botón del menú de hamburguesa para pantallas pequeñas -->
+                                <span class="menu-toggle">&#9776;</span>
                 <input type="text" class="search-bar" placeholder="Buscar...">
                 <button class="search-button">Buscar</button> <!-- Botón de búsqueda -->
                 <ul class="nav-links">
@@ -62,9 +65,9 @@
 
     <!-- Contenedor del carrusel -->
     <div class="carousel-images" id="carouselImages">
-        <img src="../resources/Imagenes/dia.jpeg" alt="Imagen 1"> <!-- Primer imagen -->
-        <img src="../resources/Imagenes/elemantal.jpeg" alt="Imagen 2"> <!-- Segunda imagen -->
-        <img src="../resources/Imagenes/2.jpg" alt="Imagen 3"> <!-- Tercer imagen -->
+        <img src="../resources/Imagenes/1.png" alt="Imagen 1"> <!-- Primer imagen -->
+        <img src="../resources/Imagenes/2.png" alt="Imagen 2"> <!-- Segunda imagen -->
+        <img src="../resources/Imagenes/3.jpg" alt="Imagen 3"> <!-- Tercer imagen -->
     </div>
 
     <!-- Botón para ir a la imagen siguiente -->

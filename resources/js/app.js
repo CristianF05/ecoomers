@@ -3,6 +3,16 @@ const dots = document.querySelectorAll(".dot");
 const totalSlides = carouselImages.children.length;
 let currentSlide = 0; // Índice para el primer slide visible
 
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('menu-open'); // Alternar el estado del menú
+});
+
+
+
 // Función para mostrar un slide con transición suave o instantánea
 function showSlide(slideIndex, instant = false) {
     const slideWidth = carouselImages.children[0].clientWidth;

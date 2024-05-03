@@ -27,6 +27,7 @@ html, body {
     border-radius: 4px;
     background-color: white;
     color: #333;
+    flex-grow: 1; /* Para que crezca y se ajuste a la pantalla */
 }
 
 .search-button {
@@ -95,6 +96,38 @@ html, body {
     height: 20px;
 }
 
+/* Botones para dispositivos móviles */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive con media queries */
+@media (max-width: 768px) {
+    /* Cambiar a un diseño de columna para pantallas pequeñas */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ocultar enlaces y mostrar menú de hamburguesa */
+    .nav-links {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar en pantallas pequeñas */
+    }
+}
+
+/* Estilos para menú desplegable en pantallas pequeñas */
+.menu-open .nav-links {
+    display: flex; /* Mostrar cuando el menú está abierto */
+}
 /* Banner con texto desplazable */
 
 .scrolling-banner {
@@ -139,7 +172,9 @@ html, body {
 .carousel {
     position: relative;
     width: 100%; /* Asegura que el carrusel ocupe todo el ancho del contenedor */
-    max-width: 600px; /* Ancho máximo del carrusel */
+    max-width: 1400px; /* Ancho máximo del carrusel */
+    height: 500px; /* Altura del carrusel */
+    max-height: 500px; /* Altura máxima para evitar desbordamiento */
     height: 670px; /* Mantiene la relación de aspecto */
     margin: auto; /* Centrar el carrusel */
     overflow: hidden; /* Para ocultar imágenes fuera del contenedor */
@@ -148,15 +183,17 @@ html, body {
 /* Contenedor de las imágenes del carrusel */
 .carousel-images {
     display: flex; /* Mantiene las imágenes en una fila */
-    transition: transform 0.5s ease-in-out; /* Animación suave para la transición */
+    transition: transform 0.5s ease-in-out; /* Transición suave para el carrusel */
     width: 100%; /* Ajusta el ancho para que todas las imágenes quepan */
+    height: 100%; /* Permite que el contenedor de imágenes ocupe toda la altura del carrusel */
 }
 
 /* Imágenes del carrusel */
 .carousel-images img {
-    flex: 1; /* Permite que las imágenes tengan igual ancho */
-    min-width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
+    flex: 1; /* Mantiene las imágenes del mismo tamaño */
+    min-width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    height: 100%; /* Las imágenes ocupan toda la altura del carrusel */
+    object-fit: cover; /* Ajusta el contenido para llenar el espacio sin distorsión */
 }
 
 /* Botones para cambiar de imagen */
