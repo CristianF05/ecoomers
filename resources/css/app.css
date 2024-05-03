@@ -1,0 +1,212 @@
+/* Reset básico para eliminar márgenes y padding por defecto */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 25px; /* Se incrementa el padding para crear más espacio */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 96,5%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+}
+
+.search-button {
+    padding: 8px 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #777;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f1c40f;
+}
+
+.cart-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    transition: color 0.3s;
+    margin-right: 50px; /* Ajuste del margen derecho para crear espacio con el borde */
+}
+
+.cart-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Banner con texto desplazable */
+
+.scrolling-banner {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scrolling-text-wrapper {
+    display: flex;
+    animation: scroll-left 34s linear infinite;
+    transform: translateX(0);
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-top: 5px;
+    margin-right: 30px; /* Asegura 30px de espacio entre elementos */
+}
+
+/* Asegurarse de que el separador también tenga espacio */
+.separator {
+    display: inline-block;
+    margin-right: 30px; /* Espacio entre elementos del texto */
+}
+
+/* Animación para el desplazamiento continuo */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho del contenedor */
+    max-width: 600px; /* Ancho máximo del carrusel */
+    height: 670px; /* Mantiene la relación de aspecto */
+    margin: auto; /* Centrar el carrusel */
+    overflow: hidden; /* Para ocultar imágenes fuera del contenedor */
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-images {
+    display: flex; /* Mantiene las imágenes en una fila */
+    transition: transform 0.5s ease-in-out; /* Animación suave para la transición */
+    width: 100%; /* Ajusta el ancho para que todas las imágenes quepan */
+}
+
+/* Imágenes del carrusel */
+.carousel-images img {
+    flex: 1; /* Permite que las imágenes tengan igual ancho */
+    min-width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Botones para cambiar de imagen */
+.carousel-btn {
+    position: absolute;
+    top: 50%; /* Posiciona en el centro verticalmente */
+    transform: translateY(-50%); /* Alinea con el centro */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    border: none;
+    font-size: 2em; /* Tamaño para flechas */
+    padding: 10px;
+    cursor: pointer; /* Cursor de puntero para interacción */
+    z-index: 1; /* Asegura que los botones estén sobre las imágenes */
+}
+
+/* Botón para la imagen anterior */
+.prev-btn {
+    left: 10px; /* Posiciona a la izquierda */
+}
+
+/* Botón para la imagen siguiente */
+.next-btn {
+    right: 10px; /* Posiciona a la derecha */
+}
+
+/* Puntos de navegación para indicar la posición */
+.carousel-dots {
+    text-align: center; /* Centra los puntos */
+    position: absolute;
+    bottom: 10px; /* Posiciona en la parte inferior */
+    width: 100%; /* Abarca todo el ancho */
+    z-index: 1; /* Asegura que estén sobre las imágenes */
+}
+
+/* Estilo para cada punto */
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0); /* Color por defecto para los puntos */
+    border-radius: 50%; /* Forma redonda */
+    display: inline-block; /* Para mantener los puntos en línea */
+    margin: 0 5px; /* Espacio entre puntos */
+    cursor: pointer; /* Cursor de puntero para interacción */
+}
+
+/* Punto seleccionado */
+.dot.active {
+    background-color: rgb(255, 145, 0); /* Color para el punto activo */
+}
+
+
+
