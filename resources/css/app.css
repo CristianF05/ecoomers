@@ -16,6 +16,7 @@ html, body {
     width: 96,5%;
 }
 
+
 .navbar-left {
     display: flex;
     align-items: center;
@@ -128,6 +129,7 @@ html, body {
 .menu-open .nav-links {
     display: flex; /* Mostrar cuando el menú está abierto */
 }
+
 /* Banner con texto desplazable */
 
 .scrolling-banner {
@@ -245,5 +247,17 @@ html, body {
     background-color: rgb(255, 145, 0); /* Color para el punto activo */
 }
 
+/* Estilo para el logo */
+
+.nabar-logo img {
+    height: 50px !important; /* Ajusta la altura del logo */
+    width: auto !important; /* Mantiene la proporción del logo */
+    cursor: pointer !important; /* Cambia el cursor al pasar por el logo */
+    transition: transform 0.3s !important; /* Suavidad en la transición */
+}
+
+.nabar-logo img:hover {
+    transform: scale(1.1) !important; /* Efecto de ampliación al pasar el ratón */
+}
 
 

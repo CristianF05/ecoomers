@@ -1,3 +1,17 @@
+const scrollingBanner = document.getElementById("scrolling-banner");
+const scrollingWrapper = document.querySelector(".scrolling-text-wrapper");
+
+// Evento para pausar la animación cuando el ratón está sobre el banner
+scrollingBanner.addEventListener("mouseenter", () => {
+    scrollingWrapper.style.animationPlayState = "paused"; // Pausar la animación
+});
+
+// Evento para reanudar la animación cuando el ratón se retira del banner
+scrollingBanner.addEventListener("mouseleave", () => {
+    scrollingWrapper.style.animationPlayState = "running"; // Reanudar la animación
+});
+
+
 const carouselImages = document.getElementById("carouselImages");
 const dots = document.querySelectorAll(".dot");
 const totalSlides = carouselImages.children.length;
