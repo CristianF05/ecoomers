@@ -4,66 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../resources/css/menu.css">
+    <link rel="stylesheet" href="../resources/css/registrar.css">
 </head>
 <body>
-    <!-- Banner de desplazamiento para promociones -->
-    <div class="scrolling-banner" id="scrolling-banner">
-        <div class="scrolling-text-wrapper">
-            <!-- Duplicar el texto para un efecto continuo -->
-            <span class="scrolling-text">
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-                <span class="separator"></span>
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-                <span class="separator"></span>
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-            </span>
-            <!-- Segunda copia para efecto continuo -->
-            <span class="scrolling-text">
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-                <span class="separator"></span>
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-                <span class="separator"></span>
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-                <span class="separator"></span>
-                Por el Día de la Madre | Un descuento del 20% <span style="color: red;">❤</span>
-            </span>
+
+<div class="register-container">
+        <div class="header">
+            <!-- Enlace para volver a la página anterior -->
+            <a href="http://localhost/ecommers/public" class="back-link"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0-1A6 6 0 1 1 8 2a6 6 0 0 1 0 12zm3.5-6.5a.5.5 0 0 0 0-1H5.707l1.647-1.646a.5.5 0 1 0-.708-.708l-2.5 2.5a.5.5 0 0 0 0 .708l2.5 2.5a.5.5 0 0 0 .708-.708L5.707 7.5H11.5z"/>
+                </svg>
+            </a>
+            <h2>Crear Cuenta</h2>
+        </div>
+
+        <form action="/register" method="POST"> <!-- Cambia la acción según tu servidor -->
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required placeholder="Tu contraseña">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Repite tu contraseña">
+            </div>
+            <button type="submit" class="register-btn">Crear Cuenta</button> <!-- Botón para crear cuenta -->
+        </form>
+
+        <div class="additional-links">
+            <a href="http://localhost/ecommers/public/Login">¿Ya tienes cuenta? Iniciar Sesión</a> <!-- Enlace para iniciar sesión -->
+        </div>
+        <div class="additional-links">
+            <a href="#forgot-password">¿Olvidaste tu contraseña?</a> <!-- Enlace para recuperar contraseña -->
         </div>
     </div>
-
-    <header>
-        <nav class="navbar">
-                
-            <div class="navbar-left">
-                <!-- Botón del menú de hamburguesa para pantallas pequeñas -->
-                <span class="menu-toggle">&#9776;</span>
-                <!-- Enlace del logo que redirige a la página de inicio -->
-                <a href="http://localhost/ecommers/public" class="nabar-logo">
-                    <img src="../resources/Imagenes_P/logo.jpeg" alt="Logo de la empresa"> <!-- Inserta el logo aquí -->
-                </a>
-                <!-- Barra de búsqueda y botón -->
-                <input type="text" class="search-bar" placeholder="Buscar...">
-                <button class="search-button">Buscar</button> <!-- Botón de búsqueda -->
-                <ul class="nav-links">
-                    <li><a href="http://localhost/ecommers/public">Inicio</a></li>
-                    <li><a href="http://localhost/ecommers/public/Rmujer">Mujer</a></li>
-                    <li><a href="http://localhost/ecommers/public/Rhombre">Hombre</a></li>
-                    <li><a href="http://localhost/ecommers/public/Rniños">Infantil</a></li>
-                    <li><a href="http://localhost/ecommers/public/Zapatos">Zapatos</a></li>
-                </ul>
-            </div>
-            <div class="navbar-right">
-                <a href="http://localhost/ecommers/public/Login" class="nav-link">Iniciar Sesión</a>
-                <a href="http://localhost/ecommers/public/Registrarse" class="nav-link">Regístrate</a>
-                <a href="http://localhost/ecommers/public/Carrito" class="cart-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                    <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
-                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-                </svg>
-                </a>
-            </div>
-        </nav>
-    </header>
 
 </body>
 </html>
