@@ -10,7 +10,7 @@ class registrarseController extends Controller
 
     {
   
-      return view ('entrada_2');
+      return view ('Registrarte');
   
     }
 }

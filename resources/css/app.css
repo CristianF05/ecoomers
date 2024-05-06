@@ -261,3 +261,129 @@ html, body {
 }
 
 
+/* Botón flotante para WhatsApp */
+.whatsapp-float {
+    position: fixed; /* Hace que el botón sea fijo en la pantalla */
+    bottom: 40px; /* Posición desde el fondo */
+    right: 40px; /* Posición desde el lado derecho */
+    z-index: 1000; /* Asegura que esté siempre visible */
+}
+
+.whatsapp-float {
+    display: inline-block; /* Asegura que el botón sea tratado como elemento en línea */
+    transition: transform 0.3s; /* Suavidad en la transición */
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.6); /* Efecto de aumento al pasar el ratón */
+}
+
+
+.image-links {
+    text-align: center; /* Centra el texto y las imágenes */
+    margin-top: 10px; /* Espacio desde la parte superior */
+    margin-bottom: 10px; /* Espacio desde la parte inferior */
+}
+
+.image-links h2 {
+    margin: 10px 0; /* Espacio de 10px arriba y abajo */
+}
+
+.image-container {
+    display: grid; /* Usar grid para disposición flexible */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.image-container a:first-child {
+    grid-column: 1; /* Primera imagen en la primera columna */
+    grid-row: 1 / span 2; /* Primera imagen abarca dos filas */
+    height: auto; /* Mantener altura automática */
+}
+
+.image-container a:nth-child(2) {
+    grid-column: 2; /* Segunda imagen en la segunda columna */
+    grid-row: 1; /* Segunda imagen en la primera fila */
+}
+
+.image-container a:nth-child(3) {
+    grid-column: 2; /* Tercera imagen en la segunda columna */
+    grid-row: 2; /* Tercera imagen en la segunda fila */
+}
+
+.image-container img {
+    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
+    height: auto; /* Mantener proporción de las imágenes */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Suavidad para el efecto hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.02); /* Efecto de ampliación al pasar el ratón */
+}
+
+
+/* CSS para el pie de página */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0; /* Espacio en la parte superior e inferior */
+}
+
+.footer-content {
+    display: flex; /* Distribuir en línea */
+    justify-content: space-between; /* Espacio entre secciones */
+    align-items: flex-start; /* Alinear al inicio */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.footer-section {
+    flex: 1; /* Dividir el espacio equitativamente */
+    padding: 20px; /* Espacio interno */
+}
+
+.footer-section h2 {
+    font-size: 1.5em; /* Tamaño del título */
+    border-bottom: 1px solid white; /* Línea debajo del título */
+    padding-bottom: 10px; /* Espacio debajo del título */
+}
+
+.footer-section p {
+    font-size: 1em; /* Tamaño del texto */
+}
+
+.footer-section a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color blanco */
+    transition: color 0.3s; /* Transición para el cambio de color */
+}
+
+.footer-section a:hover {
+    color: #f1c40f; /* Color dorado al pasar el ratón */
+}
+
+.footer-bottom {
+    text-align: center; /* Centrar el texto */
+    font-size: 0.9em; /* Tamaño de fuente */
+    border-top: 1px solid white; /* Línea superior */
+    padding: 10px 0; /* Espacio en la parte superior e inferior */
+}
+
+.socials {
+    display: flex; /* Mostrar iconos en línea */
+    gap: 10px; /* Espacio entre iconos */
+}
+
+.socials a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color por defecto */
+}
+
+.socials a:hover {
+    color: #f1c40f; /* Color dorado al pasar el ratón */
+}
+
+
+
+
