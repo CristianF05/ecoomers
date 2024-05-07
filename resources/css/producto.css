@@ -7,8 +7,8 @@
     overflow: hidden; /* Ocultar contenido desbordado */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
     transition: transform 0.3s; /* Suavidad para la transición */
-    width: 300px; /* Ancho fijo */
-    margin: 20px; /* Espacio alrededor de la tarjeta */
+    width: 250px; /* Ancho fijo */
+    margin: 10px; /* Espacio alrededor de la tarjeta */
     text-align: center; /* Centrar el contenido */
 }
 
@@ -81,7 +81,7 @@
 
 /* Estilo para la información del producto */
 .product-info {
-    padding: 15px; /* Espacio interno */
+    padding: 5px; /* Espacio interno */
 }
 
 /* Estilo para el nombre de la marca */
@@ -125,4 +125,73 @@
 /* Efecto al pasar el ratón por el botón */
 .add-to-cart-btn:hover {
     background-color: #555; /* Cambiar el color al pasar el ratón */
+}
+
+.product-list {
+    margin-top: 50px; /* Ajusta según la altura del h2 */
+    display: flex; /* Usar flex para alinear las tarjetas */
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan a la siguiente línea */
+    justify-content: flex-end; /* Centrar las tarjetas */
+    gap: 1px; /* Espacio entre tarjetas */
+}
+
+
+
+/* Estilo para la barra lateral (sidebar) */
+.sidebar {
+    width: 200px; /* Ancho fijo para la barra lateral */
+    background-color: #ffffff; /* Color de fondo */
+    padding: 20px; /* Espacio interno */
+    border-right: 1px solid #ddd; /* Borde a la derecha para separar */
+    position: fixed; /* Fija la barra lateral para que siempre esté visible */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Título de la barra lateral */
+.sidebar h3 {
+    font-size: 3.5em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Lista de elementos en la barra lateral */
+.sidebar ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Eliminar padding */
+    margin: 0; /* Eliminar márgenes */
+}
+
+/* Elementos individuales en la lista de la barra lateral */
+.sidebar ul li {
+    margin-bottom: 15px; /* Espacio entre elementos */
+}
+
+/* Estilo para los enlaces en la barra lateral */
+.sidebar ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del enlace */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Efecto al pasar el ratón por los enlaces */
+.sidebar ul li a:hover {
+    color: #e74c3c; /* Color al pasar el ratón */
+}
+
+/* Contenedor que incluye el h2 y la lista de productos */
+.product-list-wrapper {
+    position: relative; /* Necesario para el posicionamiento absoluto del h2 */
+}
+
+/* Título h2 que se coloca sobre la lista de productos, pero sin bloquear la interacción */
+.product-list-title {
+    position: absolute; /* Ubicación absoluta, pero ajustada para no bloquear productos */
+    top: -65px; /* Ajustar para evitar que cubra productos */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Centrado exacto */
+    text-align: center; /* Centrar el texto */
+    font-size: 2em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
