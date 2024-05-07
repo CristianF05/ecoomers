@@ -1,0 +1,128 @@
+/* product.css */
+
+/* Estilo para la tarjeta del producto */
+.product-card {
+    border: 1px solid #ddd; /* Borde alrededor de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar contenido desbordado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s; /* Suavidad para la transición */
+    width: 300px; /* Ancho fijo */
+    margin: 20px; /* Espacio alrededor de la tarjeta */
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Efecto al pasar el ratón por la tarjeta */
+.product-card:hover {
+    transform: scale(1.05); /* Efecto de escalado */
+}
+
+/* Estilo para la imagen del producto */
+.product-image {
+    width: 100%; /* Abarca todo el ancho */
+    position: relative; /* Para la etiqueta de descuento */
+}
+
+.product-image img {
+    max-width: 100%; /* No sobrepasar el ancho máximo */
+    border-bottom: 1px solid #ddd; /* Borde entre la imagen y la información */
+}
+
+/* Etiqueta para el descuento */
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c; /* Fondo rojo para el descuento */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    z-index: 2; /* Asegurarse de que esté sobre la imagen */
+}
+
+
+/* Estilo para los puntos que cambian las imágenes */
+.image-points {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre puntos */
+    margin: 10px 0; /* Margen entre elementos */
+}
+
+/* Estilo básico para cada punto */
+.point {
+    height: 15px; /* Tamaño del punto */
+    width: 15px;
+    border-radius: 50%; /* Forma redonda */
+    cursor: pointer; /* Para indicar interactividad */
+    transition: all 0.3s; /* Para un efecto suave */
+}
+
+/* Colores específicos para cada punto */
+.point1 {
+    background-color: #3498db; /* Azul */
+}
+
+.point2 {
+    background-color: #e67e22; /* Naranja */
+}
+
+.point3 {
+    background-color: #2ecc71; /* Verde */
+}
+
+/* Efecto cuando el punto está activo */
+.point.active {
+    background-color: #333; /* Color para el punto activo */
+    transform: scale(1.2); /* Aumento del tamaño para resaltar */
+}
+
+
+/* Estilo para la información del producto */
+.product-info {
+    padding: 15px; /* Espacio interno */
+}
+
+/* Estilo para el nombre de la marca */
+.product-brand {
+    font-size: 1.5em; /* Tamaño del texto para la marca */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Estilo para la descripción */
+.product-description {
+    font-size: 1em; /* Tamaño de la fuente */
+    color: #666; /* Color del texto */
+    margin: 10px 0; /* Espacio entre elementos */
+}
+
+/* Estilo para el precio original */
+.product-original-price {
+    text-decoration: line-through; /* Tachado para el precio original */
+    color: #999; /* Color gris para el precio original */
+    font-size: 1em; /* Tamaño de la fuente */
+}
+
+/* Estilo para el precio con descuento */
+.product-discounted-price {
+    color: #e74c3c; /* Color rojo para el precio con descuento */
+    font-size: 1.5em; /* Tamaño de la fuente */
+}
+
+/* Botón para agregar al carrito */
+.add-to-cart-btn {
+    background-color: #333; /* Color oscuro para el fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espacio interno */
+    cursor: pointer; /* Cursor de puntero para interacción */
+    transition: background-color 0.3s; /* Suavidad para la transición */
+}
+
+/* Efecto al pasar el ratón por el botón */
+.add-to-cart-btn:hover {
+    background-color: #555; /* Cambiar el color al pasar el ratón */
+}

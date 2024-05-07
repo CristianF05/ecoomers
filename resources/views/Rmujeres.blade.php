@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../resources/css/menu.css">
+    <link rel="stylesheet" href="../resources/css/mujer.css">
 </head>
 <body>
     <!-- Banner de desplazamiento para promociones -->
@@ -65,9 +66,45 @@
         </nav>
     </header>
 
+<!-- Tarjeta del producto -->
+    <div class="product-card">
+        <!-- Contenedor para la imagen del producto con la etiqueta de descuento -->
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span> <!-- Etiqueta de descuento -->
+            <img id="product-img" src="../resources/imagenes_P/deporte3.jpeg" alt="Producto"> <!-- Imagen del producto -->
+        </div>
+
+        <!-- Puntos para cambiar la imagen -->
+        <div class="image-points">
+            <span class="point point1" data-image="../resources/imagenes_P/deporte3.jpeg"></span> <!-- Azul -->
+            <span class="point point2" data-image="../resources/imagenes_P/mujer2.png"></span> <!-- Naranja -->
+            <span class="point point3" data-image="../resources/imagenes_P/mujer3.png"></span> <!-- Verde -->
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <!-- Marca del producto -->
+            <h3 class="product-brand">Marca XYZ</h3>
+            <!-- Descripción del producto -->
+            <p class="product-description">
+                Producto de alta calidad, ideal para diversas aplicaciones.
+            </p>
+            <!-- Precios y descuentos -->
+            <div class="product-pricing">
+                <span class="product-original-price">$59.99</span> <!-- Precio original -->
+                <span class="product-discounted-price">$49.99</span> <!-- Precio con descuento -->
+            </div>
+            <!-- Botón para agregar al carrito -->
+            <button class="add-to-cart-btn">Agregar al carrito</button>
+        </div>
+    </div>
+
+
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/51960724439" target="_blank" title="Contáctanos por WhatsApp" class="whatsapp-float">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">
     </a>
+
+    <script src="../resources/js/product.js"></script> 
 </body>
 </html>
