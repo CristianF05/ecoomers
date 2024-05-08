@@ -1,0 +1,56 @@
+
+.carrito {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.productos {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.resumen-compra {
+    text-align: center;
+}
+
+.cupon-descuento {
+    margin-bottom: 10px;
+}
+
+.cupon-descuento label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cupon-descuento input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.cupon-descuento button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.resumen-compra a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}

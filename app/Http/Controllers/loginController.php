@@ -33,7 +33,7 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             // Si el login es exitoso, redirigir a la página segura (como un dashboard)
-            return redirect()->route('http://localhost/ecommers/public'); // Ajusta la ruta según tu aplicación
+            return redirect()->route('home'); // Ajusta la ruta según tu aplicación
         }
 
         // Si el login falla, regresar con un mensaje de error

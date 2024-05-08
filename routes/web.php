@@ -12,9 +12,7 @@ use  App\Http\Controllers\registrarseController;
 use  App\Http\Controllers\ventaspController;
 use  App\Http\Controllers\ZapatoController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome');})->name('home');
 
 Route::get('/Carrito', [carritoController::class, 'index' ]);
 
@@ -30,7 +28,7 @@ Route::post('/login', [LoginController::class, 'store'])->name('login.store');
 
 Route::get('/Metodos_pago', [MetodosPController::class, 'index' ]);
 
-Route::get('/Rmujer', [mujerController::class, 'index' ]);
+Route::get('/Rmujer', [mujerController::class, 'index'])->name('mujer');
 
 Route::get('/Rniños', [niñoController::class, 'index' ]);
 

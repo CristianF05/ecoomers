@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../resources/css/menu.css">
+    <link rel="stylesheet" href="../resources/css/carrito.css">
 </head>
 <body>
     <!-- Banner de desplazamiento para promociones -->
@@ -64,6 +65,47 @@
             </div>
         </nav>
     </header>
+
+    <div class="carrito">
+        <h1>Carrito de compras</h1>
+
+        <div class="productos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Short Mujer Marie Camel</td>
+                        <td>S/44.95</td>
+                        <td>1</td>
+                        <td>S/44.95</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="resumen-compra">
+            <h2>Resumen de compra</h2>
+
+            <p>Subtotal: S/44.95</p>
+
+            <div class="cupon-descuento">
+                <label for="cupon">Cupón de descuento:</label>
+                <input type="text" id="cupon">
+                <button type="button">Aplicar</button>
+            </div>
+
+            <p>Total: S/44.95</p>
+
+            <a href="#">Ir a comprar</a>
+        </div>
+    </div>
 
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/51960724439" target="_blank" title="Contáctanos por WhatsApp" class="whatsapp-float">
