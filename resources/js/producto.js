@@ -32,4 +32,8 @@ setupImageSwitching("points-13", "product-img-13");
 setupImageSwitching("points-14", "product-img-14");
 setupImageSwitching("points-15", "product-img-15");
 setupImageSwitching("points-16", "product-img-16");
+setupImageSwitching("points-17", "product-img-17");
+setupImageSwitching("points-18", "product-img-18");
+setupImageSwitching("points-19", "product-img-19");
+setupImageSwitching("points-20", "product-img-20");
 

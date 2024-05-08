@@ -213,6 +213,38 @@
         </div>
     </div>
 
+    <div class="product-card">
+        <!-- Contenedor para la imagen del producto con la etiqueta de descuento -->
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span> <!-- Etiqueta de descuento -->
+            <img id="product-img-17" src="../resources/imagenes_P/deporte3.jpeg" alt="Producto"> <!-- Imagen del producto -->
+        </div>
+
+        <!-- Puntos para cambiar la imagen -->
+        <div class="image-points" id="points-17">
+            <span class="point point1" data-image="../resources/imagenes_P/deporte3.jpeg"></span> <!-- Azul -->
+            <span class="point point2" data-image="../resources/imagenes_P/mujer2.png"></span> <!-- Naranja -->
+            <span class="point point3" data-image="../resources/imagenes_P/mujer3.png"></span> <!-- Verde -->
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <!-- Marca del producto -->
+            <h3 class="product-brand">Marca XYZ</h3>
+            <!-- Descripción del producto -->
+            <p class="product-description">
+                Producto de alta calidad, ideal para diversas aplicaciones.
+            </p>
+            <!-- Precios y descuentos -->
+            <div class="product-pricing">
+                <span class="product-original-price">$59.99</span> <!-- Precio original -->
+                <span class="product-discounted-price">$49.99</span> <!-- Precio con descuento -->
+            </div>
+            <!-- Botón para agregar al carrito -->
+            <button class="add-to-cart-btn">Agregar al carrito</button>
+        </div>
+    </div>
+
 </div>
 </div>
 
@@ -347,6 +379,37 @@
         </div>
     </div>
 
+    <div class="product-card">
+        <!-- Contenedor para la imagen del producto con la etiqueta de descuento -->
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span> <!-- Etiqueta de descuento -->
+            <img id="product-img-18" src="../resources/imagenes_P/deporte3.jpeg" alt="Producto"> <!-- Imagen del producto -->
+        </div>
+
+        <!-- Puntos para cambiar la imagen -->
+        <div class="image-points" id="points-18">
+            <span class="point point1" data-image="../resources/imagenes_P/deporte3.jpeg"></span> <!-- Azul -->
+            <span class="point point2" data-image="../resources/imagenes_P/mujer2.png"></span> <!-- Naranja -->
+            <span class="point point3" data-image="../resources/imagenes_P/mujer3.png"></span> <!-- Verde -->
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <!-- Marca del producto -->
+            <h3 class="product-brand">Marca XYZ</h3>
+            <!-- Descripción del producto -->
+            <p class="product-description">
+                Producto de alta calidad, ideal para diversas aplicaciones.
+            </p>
+            <!-- Precios y descuentos -->
+            <div class="product-pricing">
+                <span class="product-original-price">$59.99</span> <!-- Precio original -->
+                <span class="product-discounted-price">$49.99</span> <!-- Precio con descuento -->
+            </div>
+            <!-- Botón para agregar al carrito -->
+            <button class="add-to-cart-btn">Agregar al carrito</button>
+        </div>
+    </div>
 </div>
 </div>
 
@@ -482,6 +545,37 @@
         </div>
     </div>
 
+    <div class="product-card">
+        <!-- Contenedor para la imagen del producto con la etiqueta de descuento -->
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span> <!-- Etiqueta de descuento -->
+            <img id="product-img-19" src="../resources/imagenes_P/deporte3.jpeg" alt="Producto"> <!-- Imagen del producto -->
+        </div>
+
+        <!-- Puntos para cambiar la imagen -->
+        <div class="image-points" id="points-19">
+            <span class="point point1" data-image="../resources/imagenes_P/deporte3.jpeg"></span> <!-- Azul -->
+            <span class="point point2" data-image="../resources/imagenes_P/mujer2.png"></span> <!-- Naranja -->
+            <span class="point point3" data-image="../resources/imagenes_P/mujer3.png"></span> <!-- Verde -->
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <!-- Marca del producto -->
+            <h3 class="product-brand">Marca XYZ</h3>
+            <!-- Descripción del producto -->
+            <p class="product-description">
+                Producto de alta calidad, ideal para diversas aplicaciones.
+            </p>
+            <!-- Precios y descuentos -->
+            <div class="product-pricing">
+                <span class="product-original-price">$59.99</span> <!-- Precio original -->
+                <span class="product-discounted-price">$49.99</span> <!-- Precio con descuento -->
+            </div>
+            <!-- Botón para agregar al carrito -->
+            <button class="add-to-cart-btn">Agregar al carrito</button>
+        </div>
+    </div>
 </div>
 </div>    
 
@@ -617,6 +711,37 @@
         </div>
     </div>
 
+    <div class="product-card">
+        <!-- Contenedor para la imagen del producto con la etiqueta de descuento -->
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span> <!-- Etiqueta de descuento -->
+            <img id="product-img-20" src="../resources/imagenes_P/deporte3.jpeg" alt="Producto"> <!-- Imagen del producto -->
+        </div>
+
+        <!-- Puntos para cambiar la imagen -->
+        <div class="image-points" id="points-20">
+            <span class="point point1" data-image="../resources/imagenes_P/deporte3.jpeg"></span> <!-- Azul -->
+            <span class="point point2" data-image="../resources/imagenes_P/mujer2.png"></span> <!-- Naranja -->
+            <span class="point point3" data-image="../resources/imagenes_P/mujer3.png"></span> <!-- Verde -->
+        </div>
+
+        <!-- Información del producto -->
+        <div class="product-info">
+            <!-- Marca del producto -->
+            <h3 class="product-brand">Marca XYZ</h3>
+            <!-- Descripción del producto -->
+            <p class="product-description">
+                Producto de alta calidad, ideal para diversas aplicaciones.
+            </p>
+            <!-- Precios y descuentos -->
+            <div class="product-pricing">
+                <span class="product-original-price">$59.99</span> <!-- Precio original -->
+                <span class="product-discounted-price">$49.99</span> <!-- Precio con descuento -->
+            </div>
+            <!-- Botón para agregar al carrito -->
+            <button class="add-to-cart-btn">Agregar al carrito</button>
+        </div>
+    </div>
 </div>
 </div> 
 

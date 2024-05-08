@@ -52,7 +52,7 @@
                 </ul>
             </div>
             <div class="navbar-right">
-                <a href="http://localhost/ecommers/public/Login" class="nav-link">Iniciar Sesión</a>
+                <a href="http://localhost/ecommers/public/login" class="nav-link">Iniciar Sesión</a>
                 <a href="http://localhost/ecommers/public/Registrarse" class="nav-link">Regístrate</a>
                 <a href="http://localhost/ecommers/public/Carrito" class="cart-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">

@@ -1,21 +1,25 @@
-/* register.css */
-
 /* Estilo general para el contenedor del formulario de registro */
 .register-container {
-    max-width: 400px; /* Ancho máximo del contenedor */
+    max-width: 450px; /* Aumenta el ancho máximo */
     margin: 50px auto; /* Centrar el contenedor */
-    padding: 20px; /* Espacio interno */
-    background-color: #f9f9f9; /* Fondo claro */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    border-radius: 10px; /* Bordes redondeados */
+    padding: 30px; /* Más espacio interno */
+    background-color: #ffffff; /* Fondo blanco para mayor claridad */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-radius: 15px; /* Bordes más redondeados */
+    transition: transform 0.3s; /* Suavidad al hacer hover */
+}
+
+.register-container:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el ratón */
 }
 
 /* Estilo para el encabezado con la flecha y el título */
 .header {
     display: flex;
-    align-items: center; /* Alinear verticalmente al centro */
+    align-items: center; /* Alinear verticalmente */
     justify-content: center; /* Centrar horizontalmente */
-    gap: 10px; /* Espacio entre la flecha y el título */
+    gap: 10px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
 }
 
 /* Estilo para la flecha de retroceso */
@@ -23,6 +27,7 @@
     text-decoration: none; /* Sin subrayado */
     cursor: pointer; /* Cambia el cursor al pasar por el enlace */
     transition: color 0.3s; /* Suavidad al cambiar de color */
+    color: #333; /* Color por defecto */
 }
 
 .back-link:hover {
@@ -31,35 +36,42 @@
 
 /* Estilo para el título */
 h2 {
-    font-size: 1.5em; /* Tamaño del título */
+    font-size: 1.8em; /* Tamaño del título */
     color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    flex-grow: 1; /* Permitir que el título crezca para centrarse */
 }
-
 /* Estilo para los campos del formulario */
 .form-group {
-    margin-bottom: 20px; /* Espacio entre campos */
+    margin-bottom: 25px; /* Más espacio entre campos */
 }
 
 .form-group label {
     display: block; /* Mostrar en una línea separada */
-    color: #333; /* Color del texto */
+    color: #555; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
 }
 
 .form-group input {
     width: 100%; /* Ocupa todo el ancho del contenedor */
-    padding: 10px; /* Espacio interno */
-    border: 1px solid #ccc; /* Borde claro */
-    border-radius: 5px; /* Bordes redondeados */
+    padding: 12px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde claro */
+    border-radius: 8px; /* Bordes más redondeados */
+    transition: border-color 0.3s; /* Suavidad al cambiar de color */
+}
+
+.form-group input:focus {
+    border-color: #3498db; /* Color azul al enfocar */
+    outline: none; /* Eliminar outline por defecto */
 }
 
 /* Estilo para el botón de registro */
 .register-btn {
     width: 100%; /* El botón ocupa todo el ancho */
-    padding: 10px; /* Espacio interno */
+    padding: 12px; /* Espacio interno */
     background-color: #333; /* Color de fondo oscuro */
     color: white; /* Color del texto */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 8px; /* Bordes redondeados */
     cursor: pointer; /* Cursor de puntero para interacción */
     transition: background-color 0.3s; /* Suavidad al cambiar de color */
 }
@@ -71,7 +83,7 @@ h2 {
 /* Estilo para los enlaces adicionales (iniciar sesión, recuperar contraseña) */
 .additional-links {
     text-align: center; /* Centrar los enlaces */
-    margin-top: 20px; /* Espacio encima de los enlaces adicionales */
+    margin-top: 30px; /* Más espacio encima de los enlaces adicionales */
 }
 
 .additional-links a {

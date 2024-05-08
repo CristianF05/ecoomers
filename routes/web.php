@@ -22,7 +22,11 @@ Route::get('/Crear_A', [crearController::class, 'index' ]);
 
 Route::get('/Rhombre', [hombreController::class, 'index' ]);
 
-Route::get('/Login', [loginController::class, 'index' ]);
+// Ruta para mostrar el formulario de inicio de sesión (GET)
+Route::get('/login', [LoginController::class, 'index'])->name('login.index'); 
+
+// Ruta para procesar el formulario de inicio de sesión (POST)
+Route::post('/login', [LoginController::class, 'store'])->name('login.store'); 
 
 Route::get('/Metodos_pago', [MetodosPController::class, 'index' ]);
 
@@ -30,7 +34,11 @@ Route::get('/Rmujer', [mujerController::class, 'index' ]);
 
 Route::get('/Rniños', [niñoController::class, 'index' ]);
 
-Route::get('/Registrarse', [registrarseController::class, 'index' ]);
+// Ruta para mostrar el formulario de registro (GET)
+Route::get('/Registrarse', [RegistrarseController::class, 'index'])->name('registrarse.index'); 
+
+// Ruta para procesar el formulario de registro (POST)
+Route::post('/Registrarse', [RegistrarseController::class, 'store'])->name('registrarse.store'); 
 
 Route::get('/Ventas_P', [ventaspController::class, 'index' ]);
 
