@@ -12,8 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('productos', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); // ID único para el producto
+            $table->string('nombre'); // Nombre del producto
+            $table->text('descripcion'); // Descripción del producto
+            $table->decimal('precio', 8, 2); // Precio del producto
+            $table->string('categoria'); // Categoría (mujer, hombre, niños, zapatos, etc.)
+            $table->string('tipo_prenda'); // Tipo de prenda (polo, chaleco, pantalón, etc.)
+            $table->string('imagen')->nullable(); // Ruta de la imagen del producto
+            $table->integer('stock')->default(0); // Cantidad en inventario
+            $table->timestamps(); // Timestamps para created_at y updated_at
         });
     }
 
@@ -22,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('productos');
+        Schema::dropIfExists('productos'); // Borra la tabla de productos
     }
 };

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../resources/css/menu.css">
+    <link rel="stylesheet" href="../resources/css/crear_p.css">
 </head>
 <body>
     <!-- Banner de desplazamiento para promociones -->
@@ -64,6 +65,66 @@
             </div>
         </nav>
     </header>
+
+    <div class="product-form-container">
+    <h2>Agregar Producto</h2> <!-- Título del formulario -->
+
+    <form action="/productos" method="POST" enctype="multipart/form-data"> <!-- Envío de formularios y subida de imágenes -->
+        @csrf <!-- Protección CSRF para seguridad -->
+
+        <!-- Campo para la marca del producto -->
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required placeholder="Marca del producto">
+        </div>
+
+        <!-- Campo para la descripción -->
+        <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required placeholder="Descripción del producto"></textarea>
+        </div>
+
+        <!-- Campo para el precio original -->
+        <div class="form-group">
+            <label for="precio-original">Precio Original:</label>
+            <input type="number" id="precio-original" name="precio_original" required placeholder="Precio original" min="0">
+        </div>
+
+        <!-- Campo para el descuento (opcional) -->
+        <div class="form-group">
+            <label for="descuento">Descuento (%):</label>
+            <input type="number" id="descuento" name="descuento" placeholder="Descuento en porcentaje" min="0" max="100">
+        </div>
+
+        <!-- Campo para el precio con descuento (calculado) -->
+        <div class="form-group">
+            <label for="precio-descuento">Precio con Descuento:</label>
+            <input type="number" id="precio-descuento" name="precio_descuento" readonly> <!-- Solo lectura -->
+        </div>
+
+        <!-- Campo para la imagen del producto -->
+        <div class="form-group">
+            <label for="imagen">Imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required> <!-- Subida de imágenes -->
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit" class="submit-button">Agregar Producto</button>
+    </form>
+</div>
+
+<!-- Script para calcular el precio con descuento -->
+<script>
+    document.getElementById('descuento').addEventListener('input', function() {
+        const precioOriginal = parseFloat(document.getElementById('precio-original').value) || 0;
+        const descuento = parseFloat(this.value) || 0;
+        const precioConDescuento = precioOriginal - (precioOriginal * descuento / 100);
+        
+        document.getElementById('precio-descuento').value = precioConDescuento.toFixed(2); // Dos decimales
+    });
+</script>
+
+
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/51960724439" target="_blank" title="Contáctanos por WhatsApp" class="whatsapp-float">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 50px; height: 50px;">

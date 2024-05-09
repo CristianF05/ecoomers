@@ -41,6 +41,6 @@ class registrarseController extends Controller
         $registro->save();
 
         // Redireccionar a una página de éxito o a la página de inicio de sesión
-        return redirect()->route('http://localhost/ecommers/public/login')->with('success', 'Cuenta creada con éxito');
+        return redirect()->route('login.index')->with('success', 'Cuenta creada con éxito');
     }
 }

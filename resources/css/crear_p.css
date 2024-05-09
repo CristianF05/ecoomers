@@ -1,0 +1,44 @@
+.product-form-container {
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centramos el contenedor */
+    padding: 20px; /* Espacio interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.product-form-container h2 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color del texto */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+
+.form-group label {
+    display: block; /* Mostrar en línea separada */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde claro */
+}
+
+.submit-button {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    text-align: center; /* Centrar el texto */
+}
+
+.submit-button:hover {
+    background-color: #555; /* Fondo más claro al pasar el ratón */
+}
